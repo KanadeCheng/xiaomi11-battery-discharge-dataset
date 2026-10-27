@@ -1,6 +1,6 @@
 # Xiaomi 11 Battery Discharge Dataset
 
-Raw Xiaomi 11 measurements used in **A Low-Order Continuous-Time Electrothermal Model for Smartphone Time-to-Empty Prediction and Uncertainty Quantification**, manuscript **V4.4**.
+Raw Xiaomi 11 measurements used in **A Low-Order Continuous-Time Electrothermal Model for Smartphone Time-to-Empty Prediction and Uncertainty Quantification**.
 
 The dataset contains **42 measurement records**, **567 CSV files**, and **3,605,489 data rows** (963,688,544 raw-data bytes). Each workload has seven records at room temperature and seven at low temperature.
 
@@ -63,5 +63,3 @@ Additional columns retain their original labels and units. Missing cells mean un
 Measurements were collected through non-root wireless ADB monitoring. The main sampling rate is approximately 4 Hz; some device states and Perfetto-window fields update more slowly. Monitoring overhead is included in the observed workload. Some records contain sampling gaps or screen-off observations, which are preserved in the raw files.
 
 Logged endpoints and physical shutdown evidence should be distinguished. In particular, `low_temperature/local_video_playback_7` runs from 99% SOC to its final logged 1% SOC sample for 31,099.38 seconds; that final sample is its comparison endpoint in the manuscript. A filename containing `disconnect` identifies a connection event.
-
-This repository provides raw measurements for reviewer and reader access. Analysis code, derived results, and third-party datasets are outside this data release.
